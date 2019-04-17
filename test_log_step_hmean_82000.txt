@@ -1,0 +1,12 @@
+step:82000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.8211 Recall:0.6851 Hmean0.7470 <==> Done
+step:83000 ssd_fcn_multitask <==> Evaluation <==> Precision:-1.00 Recall:-1.00 Hmean-1.00 <==> Done
+step:84000 ssd_fcn_multitask <==> Evaluation <==> Precision:-1.00 Recall:-1.00 Hmean-1.00 <==> Done
+step:85000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.7723 Recall:0.7217 Hmean0.7461 <==> Done
+step:86000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.7759 Recall:0.7102 Hmean0.7416 <==> Done
+step:87000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.8326 Recall:0.6895 Hmean0.7543 <==> Done
+step:88000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.8155 Recall:0.6875 Hmean0.7461 <==> Done
+step:89000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.8285 Recall:0.6952 Hmean0.7560 <==> Done
+step:90000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.7654 Recall:0.7164 Hmean0.7401 <==> Done
+step:91000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.8003 Recall:0.7082 Hmean0.7515 <==> Done
+step:92000 ssd_fcn_multitask <==> Evaluation <==> Precision:-1.00 Recall:-1.00 Hmean-1.00 <==> Done
+step:93000 ssd_fcn_multitask <==> Evaluation <==> Precision:0.7851 Recall:0.7212 Hmean0.7518 <==> Done

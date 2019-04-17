@@ -1,0 +1,42 @@
+MODEL:
+  ADD_FCN: TRUE
+  NUM_CLASSES: 2
+  NEG_POS_RATIO: 3
+  PRIORS:
+    FEATURE_MAPS: [64, 32, 16, 8, 4, 2, 1]
+    STRIDES: [8, 16, 32, 64, 128, 256, 512]
+    #MIN_SIZES: [10, 40, 70, 100, 130, 160, 190]
+    #MAX_SIZES: [40, 70, 100, 130, 160, 190,220]
+    MIN_SIZES: [20, 50, 80, 110, 140, 170, 200]
+    MAX_SIZES: [50, 80, 110, 140, 170, 200, 230]
+    ASPECT_RATIOS: [[2,3,4,5,6,7],[2,3,4,5,6,7],[2,3,4,5,6,7],[2,3,4,5,6,7],[2,3,4,5,6,7],[2,3,4,5,6,7],[2,3,4,5,6,7]]
+    BOXES_PER_LOCATION: [126, 126, 126, 126, 126, 126, 126]
+    ROTATE_THATA_RANGE: [0,90]
+    DIVIDED_NUM: 10
+    #calculated by 1.656*scale
+    DISTANCE_THRESHOLD: [0.065,0.16,0.258,0.36,0.45,0.55,0.65] #f1=0.7478的设置
+
+
+
+
+
+
+
+
+
+INPUT:
+  IMAGE_SIZE: 512
+DATASETS:
+  TRAIN: ("synthtext_train",)
+  TEST:  ("synthtext_test",)
+SOLVER:
+  WEIGHT_DECAY: 1e-4
+  MAX_ITER: 119000
+  LR_STEPS: [59000,]
+  GAMMA: 0.1
+  BATCH_SIZE: 8
+  LR: 1e-4
+  WARMUP_FACTOR: 0.333333
+  WARMUP_ITERS: 0
+
+OUTPUT_DIR : 'output'

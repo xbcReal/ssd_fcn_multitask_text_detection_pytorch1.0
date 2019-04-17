@@ -1,0 +1,42 @@
+MODEL:
+  ADD_FCN: TRUE
+  NUM_CLASSES: 2
+  NEG_POS_RATIO: 3
+  #for 1024x1024 config
+  PRIORS:
+    FEATURE_MAPS: [128, 64, 32, 16, 8, 4, 3]
+    STRIDES: [16, 32, 64, 128, 256, 512, 1024]
+    MIN_SIZES: [40, 100, 160, 220, 280, 340, 400]
+    MAX_SIZES: [100, 160, 220, 280, 340, 400, 460]
+    ASPECT_RATIOS: [[2,3,4,5,6,7,10],[2,3,4,5,6,7,10],[2,3,4,5,6,7,10],[2,3,4,5,6,7,10],[2,3,4,5,6,7,10],[2,3,4,5,6,7,10],[2,3,4,5,6,7,10]]
+    BOXES_PER_LOCATION: [48, 48, 48, 48, 48, 48, 48]
+    ROTATE_THATA_RANGE: [0,90]
+    DIVIDED_NUM: 4
+    #calculated by 1.656*scale
+    DISTANCE_THRESHOLD: [0.065,0.16,0.258,0.36,0.45,0.55,0.65] #f1=0.7785的设置
+
+
+
+
+
+
+
+
+INPUT:
+  IMAGE_SIZE: 1024
+DATASETS:
+#  TRAIN: ("icdar2015_train","icdar2013_train",)
+  TRAIN: ("icdar2015_train",)
+  TEST:  ("icdar2015_test",)
+SOLVER:
+  WEIGHT_DECAY: 1e-3
+  MAX_ITER: 150000
+  LR_STEPS: [80000,100000,120000,]
+
+  GAMMA: 0.5
+  BATCH_SIZE: 2
+  LR: 0.0001
+  WARMUP_FACTOR: 0.333333
+  WARMUP_ITERS: 500
+
+OUTPUT_DIR : 'output'
