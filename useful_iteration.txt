@@ -1,2 +1,0 @@
-count_useful_iteration:110000
-count_not_useful_iteration:0
